@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace VinaiKopp\CurrentProductExample\Registry;
+namespace Skywire\CurrentProductProvider\DataProvider;
 
 use Magento\Catalog\Api\Data\ProductInterface;
 use Magento\Catalog\Api\Data\ProductInterfaceFactory;

@@ -2,4 +2,4 @@
 
 use Magento\Framework\Component\ComponentRegistrar;
 
-ComponentRegistrar::register(ComponentRegistrar::MODULE, 'VinaiKopp_CurrentProductExample', __DIR__);
+ComponentRegistrar::register(ComponentRegistrar::MODULE, 'Skywire_CurrentProductProvider', __DIR__);

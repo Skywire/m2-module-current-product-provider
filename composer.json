@@ -1,6 +1,6 @@
 {
-    "name": "vinaikopp/module-current-product-example",
-    "description": "Example module using the current product on a product detail page avoiding deprecated types",
+    "name": "skywire/current-product-provider",
+    "description": "Data provider and view model to access the current product on the catalog_product_view page (PDP)",
     "require": {
         "php": "^7.2.0",
         "magento/module-catalog": "^100.0.0",
@@ -15,7 +15,7 @@
             "registration.php"
         ],
         "psr-4": {
-            "VinaiKopp\\CurrentProductExample\\": ""
+            "Skywire\\CurrentProductProvider\\": ""
         }
     }
 }

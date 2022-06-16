@@ -1,18 +1,19 @@
 <?php declare(strict_types=1);
 
-namespace VinaiKopp\CurrentProductExample\ViewModel;
+namespace Skywire\CurrentProductProvider\ViewModel;
 
+use Magento\Catalog\Api\Data\ProductInterface;
 use Magento\Framework\View\Element\Block\ArgumentInterface;
-use VinaiKopp\CurrentProductExample\Registry\CurrentProduct;
+use Skywire\CurrentProductProvider\DataProvider\CurrentProduct as Provider;
 
-class CurrentProductExampleViewModel implements ArgumentInterface
+class CurrentProduct implements ArgumentInterface
 {
     /**
-     * @var CurrentProduct
+     * @var Provider
      */
     private $currentProduct;
 
-    public function __construct(CurrentProduct $currentProduct)
+    public function __construct(Provider $currentProduct)
     {
         $this->currentProduct = $currentProduct;
     }
@@ -25,5 +26,10 @@ class CurrentProductExampleViewModel implements ArgumentInterface
     public function getProductSku(): string
     {
         return (string) $this->currentProduct->get()->getSku();
+    }
+
+    public function getProduct(): ProductInterface
+    {
+        return $this->currentProduct->get();
     }
 }

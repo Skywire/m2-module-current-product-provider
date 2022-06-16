@@ -1,11 +1,11 @@
 <?php declare(strict_types=1);
 
-namespace VinaiKopp\CurrentProductExample\Observer;
+namespace Skywire\CurrentProductProvider\Observer;
 
 use Magento\Catalog\Api\Data\ProductInterface;
 use Magento\Framework\Event\Observer as Event;
 use Magento\Framework\Event\ObserverInterface;
-use VinaiKopp\CurrentProductExample\Registry\CurrentProduct;
+use Skywire\CurrentProductProvider\DataProvider\CurrentProduct;
 
 class RegisterCurrentProductObserver implements ObserverInterface
 {
