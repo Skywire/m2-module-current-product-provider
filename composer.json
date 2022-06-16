@@ -2,7 +2,7 @@
     "name": "skywire/current-product-provider",
     "description": "Data provider and view model to access the current product on the catalog_product_view page (PDP)",
     "require": {
-        "php": "^7|^8",
+        "php": "^7|^8"
     },
     "type": "magento2-module",
     "license": [
